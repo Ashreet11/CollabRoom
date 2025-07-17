@@ -3,7 +3,6 @@ import http from "http";
 import { Server } from "socket.io";
 import dotenv from "dotenv";
 import socketHandler from "./socket/socketHandler.js";
-import keepServerAwake from "./config/keepAwake.js";
 
 dotenv.config();
 
@@ -17,7 +16,7 @@ const io = new Server(server, {
   },
 });
 
-keepServerAwake();     
+     
 socketHandler(io);     
 
 app.get("/", (req, res) => {
