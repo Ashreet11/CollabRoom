@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const keepServerAwake = () => {
-  const url = process.env.FRONTEND_URL || "http://localhost:5173"; 
+  const url = "https://collabroom-backend.onrender.com/test"; 
   const interval = 30000;
 
   setInterval(() => {
