@@ -12,15 +12,19 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: process.env.FRONTEND_URL || "*", // ✅ Update to frontend URL on Vercel later
+    origin: process.env.FRONTEND_URL || "*", 
     methods: ["GET", "POST"],
   },
 });
 
-keepServerAwake();     // 🔁 Keep Render backend alive
-socketHandler(io);     // ⚡ Attach socket events
+keepServerAwake();     
+socketHandler(io);     
 
-// Basic test route
+app.get("/", (req, res) => {
+  res.status(200).send("Server is up and running.");
+});
+
+
 app.get("/test", (req, res) => {
   res.send("CollabRoom backend is running!");
 });
