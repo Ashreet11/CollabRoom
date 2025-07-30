@@ -42,10 +42,14 @@ cd backend
 # Install dependencies
 npm install
 
+npm run dev
+
 # Navigate to the frontend folder
 cd frontend
 
 # Install dependencies
 npm install
+
+npm run dev
 
 
