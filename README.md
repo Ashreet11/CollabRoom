@@ -51,5 +51,7 @@ cd frontend
 npm install
 
 npm run dev
-
+```
+## Author
+Ashreet Kaur Shembe 
 
