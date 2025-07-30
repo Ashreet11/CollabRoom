@@ -1,4 +1,4 @@
-# CollabRoom 🎥🧑‍💻
+# CollabRoom 🧑‍💻
 
 A real-time collaborative code room application built using **Socket.IO**. This platform allows multiple users to join a shared room and code together seamlessly.
 
